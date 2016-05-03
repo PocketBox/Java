@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/app_background">
+    <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="1">
+        <TableRow>
+            <TextView android:text="User Name"
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom">
+
+            </TextView>
+            <EditText android:text=""
+                android:id="@+id/userEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            </EditText>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="Password"
+                android:id="@+id/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom">
+            </TextView>
+            <EditText android:text=""
+                android:id="@+id/pwdEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:password="true">
+            </EditText>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="Password Confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom">
+            </TextView>
+            <EditText android:text=""
+                android:id="@+id/pwdConfirmEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:password="true">
+            </EditText>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="Email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom">
+            </TextView>
+            <EditText android:text=""
+                android:hint="user_name@gmail.com"
+                android:id="@+id/emailEditText"
+                android:layout_width="fill_parent">
+            </EditText>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="Address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom">
+            </TextView>
+            <EditText android:text=""
+                android:id="@+id/addrEitText"
+                android:layout_width="fill_parent">
+            </EditText>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="Choose One Identity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom">
+            </TextView>
+            <Spinner
+                android:id="@+id/identitySpinner"
+                android:layout_gravity="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/identity_array">
+            </Spinner>
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_gravity="center"
+        android:onClick="jumpToMain"
+        android:textColor="@color/bg_white"
+        android:background="@drawable/button_shape"/>
+
+</LinearLayout>

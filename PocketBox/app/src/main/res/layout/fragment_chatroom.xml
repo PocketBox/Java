@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText android:layout_width="280dp" android:layout_height="wrap_content"
+        android:id="@+id/message" android:inputType="text"
+        android:layout_gravity="bottom|left"/>
+    <Button android:id="@+id/sendButton" android:layout_width="50dp"
+        android:layout_height="30dp" android:text="Send"
+        android:textSize="@dimen/button_text_size"
+        android:layout_gravity="bottom|end"/>
+</android.support.design.widget.CoordinatorLayout>

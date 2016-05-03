@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/app_background">
+    <FrameLayout
+        android:id="@+id/different_activities"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </FrameLayout>
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_activity"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_activity"
+            android:text="@string/tab_menu_alert"
+            android:allowUndo="true" />
+
+        <RadioButton
+            android:id="@+id/rb_email"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_email"
+            android:text="@string/tab_menu_profile" />
+
+        <RadioButton
+            android:id="@+id/rb_chat"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_chat"
+            android:text="@string/tab_menu_pay" />
+
+        <RadioButton
+            android:id="@+id/rb_setting"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_setting"
+            android:text="@string/tab_menu_setting"/>
+
+    </RadioGroup>
+</LinearLayout>

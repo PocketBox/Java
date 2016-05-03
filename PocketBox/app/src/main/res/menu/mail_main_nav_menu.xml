@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inbox"
+            android:icon="@drawable/ic_inbox_black_24dp"
+            android:title="Inbox" />
+        <item
+            android:id="@+id/nav_outbox"
+            android:icon="@drawable/ic_send_black_24dp"
+            android:title="Sent" />
+        <item
+            android:id="@+id/nav_draft"
+            android:icon="@drawable/ic_drafts_black_24dp"
+            android:title="Drafts" />
+        <item
+            android:id="@+id/nav_trash"
+            android:icon="@drawable/ic_delete_black_24dp"
+            android:title="Trash" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="Tools" />
+    </group>
+
+    <item android:title="Personal Folder">
+        <menu>
+            <item
+                android:id="@+id/my_folder_add"
+                android:icon="@drawable/ic_add_box_black_24dp"
+                android:title="Create New Folder" />
+
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/my_folder_1"
+                    android:icon="@drawable/ic_folder_black_24dp"
+                    android:title="My Folder 1" />
+                <item
+                    android:id="@+id/my_folder_2"
+                    android:icon="@drawable/ic_folder_black_24dp"
+                    android:title="My Folder 2" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.MailSendActivity"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".ui.MailSendActivity"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/mail_send_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:text="Sender"
+                    android:layout_weight="4"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mail_send_from"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:text="Receiver"
+                    android:layout_weight="4"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mail_send_to"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mail_send_subject"
+                android:hint="Subject"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <ScrollView
+                android:id="@+id/SCROLLER_ID"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:scrollbars="vertical"
+                android:fillViewport="true">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:id="@+id/mail_send_content" />
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

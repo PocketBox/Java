@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_text_user"
+            android:text="@string/set_up_user"
+            android:layout_weight="3"
+            android:textSize="15dp"
+            android:singleLine="true"
+            android:textColor="#000000" />
+
+        <EditText
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_edit_user"
+            android:layout_weight="5"
+            android:singleLine="true"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_text_password"
+            android:text="@string/set_up_password"
+            android:layout_weight="3"
+            android:textSize="15dp"
+            android:singleLine="true"
+            android:textColor="#000000" />
+
+        <EditText
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_edit_password"
+            android:layout_weight="5"
+            android:singleLine="true"
+            android:textSize="15dp"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_text_incoming_server"
+            android:text="@string/set_up_incoming_server"
+            android:layout_weight="3"
+            android:textSize="15dp"
+            android:singleLine="true"
+            android:textColor="#000000" />
+
+        <EditText
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_edit_incoming_server"
+            android:layout_weight="5"
+            android:singleLine="true"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_text_outgoing_server"
+            android:text="@string/set_up_outgoing_server"
+            android:layout_weight="3"
+            android:textSize="15dp"
+            android:singleLine="true"
+            android:textColor="#000000" />
+
+        <EditText
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_edit_outgoing_server"
+            android:layout_weight="5"
+            android:singleLine="true"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/set_up_check_saving_password"
+            android:id="@+id/login_check_saving_password" />
+
+        <CheckBox
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/set_up_check_login_auto"
+            android:id="@+id/login_check_login_automatically" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/set_up_button_login"
+        android:id="@+id/login_button_login"/>
+
+</LinearLayout>
